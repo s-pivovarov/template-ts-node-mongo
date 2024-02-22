@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: ../../
+      dockerfile: bin/app/Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
+    networks:
+      - template-network
+    env_file:
+      - ../../.env
+
+networks:
+  template-network:
+    external: true

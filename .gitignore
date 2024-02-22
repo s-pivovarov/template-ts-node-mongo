@@ -1,0 +1,29 @@
+# Common files
+node_modules/
+bower_components/
+*.log
+*.tmp
+*.sock
+*.pid
+*.out
+
+# OS-specific files
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux/Mac
+.DS_Store
+
+# IDE specific files
+.idea/
+.vscode/
+.project
+
+# Other
+*.txt
+*.zip
+
+# Project
+dist
+.env
